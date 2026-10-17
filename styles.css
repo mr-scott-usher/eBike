@@ -226,6 +226,19 @@ h2 span {
   line-height: 1.6;
 }
 
+.hero-note-icon {
+  width: 29px;
+  height: 29px;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--deep-green);
+  border-radius: 50%;
+  color: var(--deep-green);
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+}
+
 .hero-note strong {
   color: var(--ink);
   font-size: 11px;
@@ -418,7 +431,7 @@ h2 {
 
 .feature-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 14px;
   margin-top: 55px;
 }
@@ -478,6 +491,67 @@ h2 {
   display: block;
   font-size: 10px;
   font-weight: 700;
+  line-height: 1.5;
+}
+
+.rules-section {
+  padding: 0 7.2% 100px;
+}
+
+.rules-section .section-heading {
+  width: 57%;
+}
+
+.rules-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 48px;
+}
+
+.rules-card {
+  min-height: 275px;
+  padding: 27px;
+  border: 1px solid var(--line);
+  background: #fbfbf7;
+}
+
+.rules-card-accent {
+  background: #e4ecdf;
+}
+
+.rules-label {
+  display: inline-block;
+  margin-bottom: 34px;
+  color: var(--deep-green);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.3px;
+}
+
+.rules-card h3 {
+  margin: 0 0 12px;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: -0.8px;
+}
+
+.rules-card p {
+  margin-bottom: 15px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+.rules-card .text-link {
+  display: inline-block;
+  margin-top: 5px;
+}
+
+.rules-card .rules-link-secondary {
+  display: block;
+  margin-top: 12px;
 }
 
 .story-section {
@@ -563,6 +637,44 @@ h2 {
   color: var(--muted);
   font-size: 13px;
   line-height: 1.85;
+}
+
+.local-stat-card {
+  min-height: 370px;
+  padding: 34px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #dce8ce;
+}
+
+.local-stat-card .eyebrow {
+  margin-bottom: 31px;
+  line-height: 1.6;
+}
+
+.local-stat {
+  color: var(--deep-green);
+  font-family: "Space Grotesk", sans-serif;
+  font-size: clamp(82px, 10vw, 130px);
+  font-weight: 500;
+  letter-spacing: -0.09em;
+  line-height: 0.9;
+}
+
+.local-stat-caption {
+  max-width: 275px;
+  margin: 16px 0 20px;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 17px;
+  line-height: 1.4;
+}
+
+.local-stat-note {
+  padding-top: 14px;
+  border-top: 1px solid rgba(23, 38, 30, 0.2);
+  color: var(--muted);
+  font-size: 10px;
 }
 
 .bottom-cta {
@@ -676,6 +788,18 @@ h2 {
 
   .story-art {
     min-height: 330px;
+  }
+
+  .rules-section {
+    padding: 0 5% 80px;
+  }
+
+  .rules-grid {
+    gap: 10px;
+  }
+
+  .rules-card {
+    padding: 21px;
   }
 }
 
@@ -828,12 +952,36 @@ h2 {
     padding: 0 6% 74px;
   }
 
-  .story-art {
+  .local-stat-card {
     min-height: 310px;
+    padding: 27px;
   }
 
   .story-copy {
     max-width: none;
+  }
+
+  .rules-section {
+    padding: 0 6% 70px;
+  }
+
+  .rules-section .section-heading,
+  .rules-section .section-intro {
+    width: 100%;
+  }
+
+  .rules-grid {
+    grid-template-columns: 1fr;
+    margin-top: 30px;
+  }
+
+  .rules-card {
+    min-height: 0;
+    padding: 22px;
+  }
+
+  .rules-label {
+    margin-bottom: 25px;
   }
 
   .bottom-cta {

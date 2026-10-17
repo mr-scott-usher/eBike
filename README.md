@@ -1,7 +1,8 @@
-# eBike
+# eBike Safety
 
-A responsive, static landing page for the eBike web app. Built with plain HTML,
-CSS, and JavaScript; no build tools or package installation are required.
+A responsive, static e-bike safety guide for Corona, California. Built with
+plain HTML, CSS, and JavaScript; no build tools or package installation are
+required.
 
 ## Run locally
 
@@ -13,26 +14,21 @@ python -m http.server 8000
 
 Then visit <http://localhost:8000>.
 
-## Publish on GitHub
+## Sources
 
-Create an empty repository on GitHub, then run these commands from this folder
-(replace the URL with your repository URL):
+- [California Vehicle Code § 312.5 — electric bicycle classes](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=312.5.&lawCode=VEH)
+- [California Vehicle Code § 21212 — helmet requirements](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=21212.&lawCode=VEH)
+- [California Vehicle Code § 21213 — Class 3 age limit](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=21213.&lawCode=VEH)
+- [Corona Ordinance No. 3430 — local bicycle and trail rules](https://pub-corona.escribemeetings.com/filestream.ashx?DocumentId=31406)
+- [Riverside University Health System — e-bike safety update (July 2026)](https://www.ruhealth.org/news/e-bike-injuries-quadruple-riverside-county-residents-urged-adopt-safe-practices)
 
-```sh
-git init
-git add .
-git commit -m "Create eBike web app starter"
-git branch -M main
-git remote add origin https://github.com/YOUR-USERNAME/YOUR-REPOSITORY.git
-git push -u origin main
-```
-
-To publish this static site with GitHub Pages, open the repository's **Settings
-→ Pages** and choose the `main` branch and `/ (root)` as the source.
+The site summarizes selected rules and safety guidance, not legal advice.
+Local access restrictions can change; check current signs and official sources
+before riding.
 
 ## Project files
 
 - `index.html` — page content and metadata
 - `styles.css` — responsive layout and visual styling
-- `script.js` — mobile navigation and current-year footer
+- `script.js` — mobile navigation
 - `assets/ebike-hero.svg` — original bicycle illustration

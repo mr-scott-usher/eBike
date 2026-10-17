@@ -1,8 +1,5 @@
 const menuToggle = document.querySelector(".menu-toggle");
 const siteNav = document.querySelector("#site-nav");
-const year = document.querySelector("#year");
-
-year.textContent = new Date().getFullYear();
 
 menuToggle.addEventListener("click", () => {
   const isOpen = menuToggle.getAttribute("aria-expanded") === "true";
