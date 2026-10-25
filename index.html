@@ -15,8 +15,8 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css?v=20261017" />
-    <script src="script.js?v=20261017" defer></script>
+    <link rel="stylesheet" href="styles.css?v=20261024" />
+    <script src="script.js?v=20261024" defer></script>
   </head>
   <body>
     <header class="site-header">
@@ -34,10 +34,11 @@
         <span></span>
       </button>
       <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+        <a href="#adventure">Family adventure</a>
         <a href="#basics">Safety basics</a>
         <a href="#corona">Corona rules</a>
         <a href="#local-news">Local update</a>
-        <a class="nav-cta" href="#basics">Ride safer <span aria-hidden="true">↓</span></a>
+        <a class="nav-cta" href="#adventure">Play the adventure <span aria-hidden="true">↓</span></a>
       </nav>
     </header>
 
@@ -78,6 +79,34 @@
           <span>Ride visible</span><b>✳</b><span>Helmet on</span><b>✳</b>
           <span>Brakes checked</span><b>✳</b><span>Ride visible</span><b>✳</b>
         </div>
+      </section>
+
+      <section class="adventure-section" id="adventure">
+        <div class="section-heading">
+          <p class="eyebrow">A parent’s e-bike adventure</p>
+          <h2>Big request.<br /><span>Smart choices.</span></h2>
+        </div>
+        <p class="section-intro">
+          Your 15-year-old wants an e-bike. Make the calls together: some choices
+          end the ride early, while safer decisions get you both ready to roll.
+        </p>
+        <div class="adventure-card" id="adventure-game">
+          <div class="adventure-topline">
+            <span class="adventure-tag">YOU’RE THE PARENT</span>
+            <span class="adventure-progress" id="adventure-progress">Decision 1 of 4</span>
+          </div>
+          <h3 id="adventure-title" tabindex="-1">The big ask</h3>
+          <p class="adventure-story" id="adventure-story" aria-live="polite"></p>
+          <div class="adventure-choices" id="adventure-choices"></div>
+          <div class="adventure-feedback" id="adventure-feedback" role="status" aria-live="polite" hidden></div>
+          <button class="button button-dark adventure-restart" id="adventure-restart" type="button" hidden>
+            Start over
+          </button>
+        </div>
+        <p class="adventure-disclaimer">
+          This story uses the California and Corona rules summarized below. Check
+          current laws, the bike’s specifications, and posted local signs before riding.
+        </p>
       </section>
 
       <section class="ride-section" id="basics">

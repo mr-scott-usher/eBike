@@ -1,8 +1,10 @@
 # eBike Safety
 
-A responsive, static e-bike safety guide for Corona, California. Built with
-plain HTML, CSS, and JavaScript; no build tools or package installation are
-required.
+A responsive, static e-bike safety guide and choose-your-adventure game for
+Corona, California. Play as a parent helping a 15-year-old choose an
+age-appropriate e-bike, gear up, practice safely, and plan a legal route. Built
+with plain HTML, CSS, and JavaScript; no build tools or package installation
+are required.
 
 ## Run locally
 
@@ -30,5 +32,5 @@ before riding.
 
 - `index.html` — page content and metadata
 - `styles.css` — responsive layout and visual styling
-- `script.js` — mobile navigation
+- `script.js` — mobile navigation and the interactive family adventure
 - `assets/ebike-hero.svg` — original bicycle illustration
